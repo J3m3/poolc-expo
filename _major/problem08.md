@@ -11,7 +11,7 @@ layout: page
 $$
 \text{SomeReLU}(z) =
 \begin{cases}
-0.01z & \text{for } z <p 0 \\
+0.01z & \text{for } z < 0 \\
 z & \text{for } z \geq 0
 \end{cases}
 $$
