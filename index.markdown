@@ -39,13 +39,13 @@ layout: page
 <script type="text/javascript">
   var majorProblemUrls = [
     {% for problem in site.major %}
-      "{{ problem.url }}"{% if forloop.last == false %},{% endif %}
+      "{{ site.baseurl }}{{ problem.url }}"{% if forloop.last == false %},{% endif %}
     {% endfor %}
   ];
 
   var nonMajorProblemUrls = [
     {% for problem in site.non_major %}
-      "{{ problem.url }}"{% if forloop.last == false %},{% endif %}
+      "{{ site.baseurl }}{{ problem.url }}"{% if forloop.last == false %},{% endif %}
     {% endfor %}
   ];
 
